@@ -1,0 +1,27 @@
+<div class="main-container">
+    <div class="nav-container">
+        <ul>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="">Home</a></li>
+            <li routerLinkActive="active"><a routerLink="About">About</a></li>
+            <li routerLinkActive="active"><a routerLink="Contact">Contact</a></li>
+            <li routerLinkActive="active"><a routerLink="Courses">Courses</a></li>
+            <span style="float:right">
+                <li><a (click)="login()">Login</a></li>
+                <li><a (click)="logout()">Logout</a></li>
+            </span>
+
+        </ul>
+        <!-- <li><a>Home</a></li>localhost:4200/Home -->
+        <!-- <li><a>About</a></li>localhost:4200/About -->
+        <!-- <li><a>Contact</a></li>localhost:4200/Contact -->
+        <!-- <li><a>Courses</a></li>localhost:4200/Courses -->
+
+    </div>
+    <div class="component-container">
+        <!-- <app-home></app-home>
+        <app-about></app-about>
+        <app-contact></app-contact>
+        <app-courses></app-courses> -->
+        <router-outlet></router-outlet>
+    </div>
+</div>
